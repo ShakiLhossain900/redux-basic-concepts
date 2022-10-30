@@ -1,4 +1,4 @@
-const redux = requre("redux");
+const redux = require("redux");
 
 //reducer
 const initialState = {
@@ -24,3 +24,7 @@ const counterSubscriber = () =>{
 }
 
 store.subscribe(counterSubscriber);
+
+store.dispatch({type: "increment"})
+store.dispatch({type: "increment"})
+
